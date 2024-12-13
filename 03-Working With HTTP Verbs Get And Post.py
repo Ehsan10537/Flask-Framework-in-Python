@@ -9,10 +9,6 @@ from flask import Flask, render_template, request
 # Flask creates a request object containing all the relevant information.
 
 app = Flask(__name__)
-"""
-it creates an instance of the Flask class,
-which will be your WSGI application
-"""
 
 @app.route('/')
 def welcome():
@@ -36,9 +32,6 @@ def form():
     if request.method == 'GET':
         return render_template('form.html')
 
-# render_template() searchs for a folder called "templates" in the directory and redirects to the html file we have provide
-# so we have to create our html pages inside the 'templates' folder in the directory.
-# it uses the Jinja 2 protocol to do this
 
 if __name__ == '__main__':
     app.run(debug=True)

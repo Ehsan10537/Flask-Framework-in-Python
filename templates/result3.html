@@ -1,0 +1,16 @@
+<html>
+    <h1>
+        Final results
+    </h1>
+    <body>
+        {% if result >= 50 %}
+        <h2>Your score is {{result}} so you have PASSED</h2>
+        {% else %}
+        <h2>Your score is {{result}} so you have FAILED</h2>
+
+        {% endif %}
+    </body>
+</html>
+
+{# in this example you are learning how to deal with if statements in a dynamic flask project #}
+{# and these comment lines are ignored by the Jinja2 template engine in flask #}

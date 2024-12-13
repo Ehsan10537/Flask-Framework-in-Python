@@ -1,10 +1,6 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-"""
-it creates an instance of the Flask class,
-which will be your WSGI application
-"""
 
 @app.route('/')
 def welcome():
